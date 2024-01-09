@@ -123,27 +123,50 @@ ul li span:hover{
 @media screen and (max-width:600px){
     .todo{
         width:100%;
-        background:#fff;
         max-width:440px;
-        margin:100px auto ;
-        padding:40px 30px 70px;
-        border-radius:10px;
+      
     }
 
    
 input{
-    flex:1;
-    border:none;
-    outline:none;
-    background:transparent;
+  
     padding:6px;
     font-size: 14px;
     font-weight: 500px;
 }
 button{
-    border:none;
+  
     margin-left:60px;
     padding:8px 40px;
+   font-size: 14px; 
+   
+}
+
+ul li{
+    font-size: 20px;
+}
+}
+
+
+@media screen and (max-width:460px){
+    .todo{
+        width:90%;
+        /* max-width:340px; */
+      padding:40px 30px 70px;
+      
+    }
+
+   
+input{
+    flex:1;
+   padding:6px;
+    font-size: 14px;
+    font-weight: 500px;
+}
+button{
+    border:none;
+    margin-left:8px;
+    padding:8px 25px;
     background:#ff5945;
     color:#fff;
     font-size: 14px; 
@@ -152,5 +175,17 @@ button{
 }
 ul li{
     font-size: 20px;
+}
+h1::after{
+    content:'';
+    background-image: url(https://w7.pngwing.com/pngs/670/265/png-transparent-checkmark-done-exam-list-pencil-todo-xomo-basics-icon-thumbnail.png);
+    position:absolute;
+    width:28px;
+    height:38px;
+    border-radius:50%;
+    background-size: cover;
+    background-position: center;
+    left:60%;
+    
 }
 }
